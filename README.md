@@ -41,3 +41,4 @@ Este repositorio incluye un pipeline de GitHub Actions que ejecuta:
 - Trivy
 
 Solo se permite merge si el CI pasa.
+"# Trigger" 
