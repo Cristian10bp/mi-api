@@ -7,8 +7,7 @@ describe('Items API', () => {
   test('POST /api/items - should create a new item', async () => {
     const res = await request(app)
       .post('/api/items')
-      .send({ title: 'Test Item' });
-    
+      .send({ title: 'Test Item' });    
     expect(res.statusCode).toBe(201);
     expect(res.body).toHaveProperty('id');
     createdItemId = res.body.id;
