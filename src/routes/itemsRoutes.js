@@ -6,7 +6,7 @@ const {
   deleteItem,
 } = require('../controllers/itemsController');
 
-// Agregar una línea vacía después de los `require`
+
 
 router.get('/', getItems);
 router.post('/', createItem);
