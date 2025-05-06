@@ -1,4 +1,3 @@
-
 // src/models/item.js
 class Item {
     constructor(id, title, description) {
@@ -7,7 +6,7 @@ class Item {
       this.description = description;
       this.createdAt = new Date();
     }
-  }
+}
   
-  module.exports = Item;
+module.exports = Item;
   
