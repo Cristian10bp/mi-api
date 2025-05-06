@@ -17,10 +17,6 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm test
-      # - uses: actions/upload-artifact@v2
-      #   with:
-      #     name: coverage-report
-      #     path: coverage
 
   docker-build:
     needs: lint-test
@@ -34,8 +30,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install Docker (if needed)
-        run: sudo apt-get install docker.io
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
