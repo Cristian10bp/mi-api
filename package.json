@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node src/index.js",
+    "lint:fix": "eslint src --fix",
     "test": "jest --coverage",
     "lint": "eslint ."
   },
