@@ -17,10 +17,10 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm test
-      - uses: actions/upload-artifact@v2
-        with:
-          name: coverage-report
-          path: coverage
+      # - uses: actions/upload-artifact@v2
+      #   with:
+      #     name: coverage-report
+      #     path: coverage
 
   docker-build:
     needs: lint-test
