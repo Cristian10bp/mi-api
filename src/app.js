@@ -9,7 +9,4 @@ app.use(express.urlencoded({ extended: false }));
 
 // Routes
 app.use('/api/items', itemsRouter);
-
-
-
 module.exports = app;
